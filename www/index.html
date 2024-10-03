@@ -150,19 +150,22 @@
 
 
     // 変数宣言
+
     var active = false;
     var startTime = 0; 
     var period = 0; 
     var rest = 0;
     var etime = 0;
-
+    var m = parseInt(rest/60); 
+    var s = parseInt(rest - m*60);
+    var n = 0;
     
     // ボタンの初期設定
     function init(){
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
-        
+        btnCClick(null);
     }
 
     // Alarmの処理
@@ -189,7 +192,6 @@
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
      active = false;   
-        
     }
 
     // ButtonCがクリックされた時の処理
