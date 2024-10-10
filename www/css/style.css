@@ -42,7 +42,9 @@
     
     #btnA {
         background-color:#ffff00;
-        color:#0000ff;
+    }
+    #btnA {
+        color:#00ff00;
         font-family:Times;
         font-size: 20px;
         position:absolute; top:380px; left:2%; width:43%; height:60px; 
